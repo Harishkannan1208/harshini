@@ -1,0 +1,224 @@
+/* 🌹 FONT */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #fff;
+  background: linear-gradient(
+      rgba(15, 10, 20, 0.7),
+      rgba(15, 10, 20, 0.85)
+    ),
+    url("../assets/bg.jpg") center / cover no-repeat fixed;
+}
+
+/* ✨ GLASS EFFECT */
+.glass {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 30px 80px rgba(255, 0, 120, 0.25);
+}
+
+/* 💖 WELCOME PAGE */
+.welcome {
+  display: flex;
+  height: 100vh;
+}
+
+.welcome-photo {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.85);
+}
+
+.welcome-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.welcome-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  background: linear-gradient(45deg, #ff9acb, #ffd6e8);
+  background-clip: text;              /* standard */
+  -webkit-background-clip: text;      /* webkit */
+  color: transparent;
+}
+
+
+
+.welcome-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin: 1.5rem 0 3rem;
+  color: #f5dbe7;
+}
+
+/* 🌟 NEXT PAGE BUTTON */
+.next-btn {
+  align-self: flex-start;
+  padding: 14px 38px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(45deg, #ff5fa2, #ff85b3);
+  box-shadow: 0 0 30px rgba(255, 90, 160, 0.8);
+  animation: glow 2.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px rgba(255, 90, 160, 0.6);
+  }
+  to {
+    box-shadow: 0 0 45px rgba(255, 140, 190, 1);
+  }
+}
+
+/* 💞 CENTER SECTIONS */
+.center {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* 📸 ALBUM */
+.album-img {
+  width: 500px;        /* smaller width */
+  height: 650px;       /* keeps portrait ratio */
+  object-fit: cover;   /* keeps image nicely cropped */
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+
+
+/* 🎥 VIDEO */
+.video-frame {
+  width: 75%;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(255, 100, 150, 0.5);
+}
+
+/* 🔐 PASSWORD */
+input {
+  background: transparent;
+  border: 2px solid rgba(255, 180, 220, 0.6);
+  padding: 14px 20px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1rem;
+  width: 260px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #f2b7d2;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff8fc5;
+}
+
+/* ❌ SHAKE */
+.shake {
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
+}
+
+/* 💍 RING */
+.ring {
+  width: 260px;
+  filter: drop-shadow(0 0 40px rgba(255, 200, 230, 0.9));
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 900px) {
+  .welcome {
+    flex-direction: column;
+  }
+
+  .welcome-photo {
+    height: 45vh;
+  }
+
+  .welcome-content {
+    padding: 2rem;
+  }
+
+  .album-img,
+  .video-frame {
+    width: 90%;
+  }
+}
+.letter-page {
+  min-height: 100vh;
+  background: #f4e9dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter-container {
+  background: #fffaf0;
+  width: 70%;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  font-family: "Georgia", serif;
+  line-height: 1.8;
+  color: #4a2c2a;
+  position: relative;
+}
+
+.letter-container h2 {
+  margin-bottom: 20px;
+}
+
+.letter-container p {
+  margin-bottom: 15px;
+}
+
+.next-btn {
+  margin-top: 30px;
+}
+
+.center.glass p {
+  font-family: 'Satisfy', cursive;
+  font-size: 24px;
+  line-height: 1.8;
+  color: black;
+}
+/* Heading Style */
+.center.glass h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 44px;
+}
+
