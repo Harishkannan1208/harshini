@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MusicPlayer from "./components/MusicPlayer";
+import MusicPlayer from "./components/musicPlayer";
 
 import Welcome from "./pages/Welcome";
 import HowWeMet from "./pages/HowWeMet";
