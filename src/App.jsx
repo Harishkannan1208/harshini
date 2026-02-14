@@ -6,7 +6,7 @@ import HowWeMet from "./pages/HowWeMet";
 import Journey from "./pages/Journey";
 import Letter from "./pages/Letter";
 import Memories from "./pages/Memories";
-import Surprise from "./pages/Surprise";
+import Surprise from "./pages/surprise";
 
 export default function App() {
   return (
